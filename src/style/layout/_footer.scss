@@ -1,0 +1,43 @@
+.footer {
+    .footer__grid {
+        display: flex;
+        align-items: flex-start;        
+        padding: 20px 22px 16px;
+        
+        &_item {
+            max-width: 145px;
+            &:last-child { .grid_item_nav li:first-child { margin-top: 0; }}
+            
+            .grid_item_title {
+                font-size: 16px;
+                color: #152935;
+            }
+            
+            .grid_item_nav {
+                li {
+                    margin-top: 19px; 
+                    
+                    a {
+                        line-height: 1.4;
+                        font-size: 13px;
+                        color: #152935;
+                        transition: all .2s;
+                    }
+                    a:not(.btn):hover {
+                        font-weight: bold;
+                    }
+                }
+                a.btn { color: #fff; }
+            }
+        }
+    }
+    
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        
+        margin-top: 22px;
+        margin-bottom: 26px;
+    }
+    
+}

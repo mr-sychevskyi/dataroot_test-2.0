@@ -1,0 +1,97 @@
+$primary-color: #30ae63;
+$hover-btn-color: #50db88;
+$btn-icon-bg-color: rgba(255, 255, 255, 0.1);
+$header-btn-border-color: rgba(255, 255, 255, 0.4);
+
+
+// BUTTONS_TYPES
+.btn {
+    display: inline-block;
+    padding: 11px;
+	
+	font-size: 14px;
+    line-height: 18px;
+    border: none;
+	
+    transition: all .4s;
+}
+
+.btn__default {
+    line-height: 16px; 
+    border: 1px solid transparent;
+} 
+
+.btn__primary {
+    padding: 11px 25px;      
+    
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 2px;
+}
+
+.btn__secondary {
+    padding: 15px 34px;
+    border-radius: 3px;
+}
+
+.btn__icon {
+    @extend .btn__default; 
+    padding-right: 28px;
+    padding-left: 16px;
+
+    background-color: $btn-icon-bg-color;
+}
+
+.btn__primary-invert {
+    padding: 10px 45px;      
+
+    color: #30ae63;
+    background-color: #fff;
+    border: 1px solid $header-btn-border-color;
+}
+
+
+// BUTTONS_STATES
+.btn-md { width: 162px; }
+
+.btn-lg { width: 100%; font-size: 14px;}
+
+.btn-green {
+    background: #ffffff url('../img/handset.png') no-repeat center;
+    border: 2px solid rgba(48, 174, 98, 0.4);
+}
+
+.btn-blue {
+    background: #ffffff url('../img/zipper.png') no-repeat center;
+    border: 2px solid rgba(37, 115, 216, 0.4);
+}
+
+
+// BUTTONS_HOVER
+.btn__primary {
+    &:hover { background-color: $hover-btn-color; } 
+    &:active { transform: scale(0.98); }  
+    &:disabled { opacity: 0.4; }  
+}
+
+.btn__secondary {
+    &:hover { box-shadow: 0px 0px 8px #2c3d47; }
+    &:active { transform: scale(1.1); } 
+    &:disabled { opacity: 0.4; }    
+}
+
+.btn__default:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid $header-btn-border-color;
+}
+
+.btn__icon:hover {
+    background: $primary-color;
+    border: 1px solid $header-btn-border-color;
+}
+
+.btn__primary-invert:hover { 
+    color: #fff; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: $header-btn-border-color;
+} 

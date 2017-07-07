@@ -1,0 +1,251 @@
+.main {
+        
+    h1 {
+        margin-top: 16px;
+        font-size: 20px;
+        line-height: 32px;
+        
+        color: #000;
+    }
+    
+    a.disabled {
+        display: none;    
+    }
+    
+    &__variants {
+        margin: 22px 0;  
+        * {color: #8c9ba5;}
+                
+        .main__variants_select { 
+            select {
+                border: none;
+                padding-right: 15px;
+                
+                font-family: 'OpenSans', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                
+                background: transparent url(../img/dd_menu.png) no-repeat 100% 50%; 
+                appearance: none;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            
+            select:hover { font-weight: bolder;}
+            
+            select:first-child { width: 115px; }
+            select:last-child  { 
+                width: 75px;
+                margin-left: 28px;
+            }
+            margin-top: -4px;
+        }
+    }
+    
+    .flat__variant {
+        position: relative;
+        padding: 12px 20px 0;
+        margin: 12px 0;
+        
+        background: #fff;
+
+        .group_img {
+            max-width: 242px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        .group_description {
+            max-width: 340px;
+            margin-left: 20px;
+            
+            a {
+                display: block;
+                margin-top: 4px;
+                margin-bottom: 10px;
+                
+                font-size: 16px;
+                color: #2c74c7;
+                transition: all .3s;
+                
+                &:hover {
+                    color: #01447e;
+                    text-decoration: underline;
+                }
+            }
+                
+            span.metro { 
+                color: #000; 
+                font-size: 12px;
+            }
+            
+            span.metro::before {
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-right: 8px;
+                border-radius: 50%;
+            }
+            
+            span.metro::after {
+                display: inline-block;
+                margin-left: 18px;
+                font-size: 12px;
+                color: #9b9b9b;
+            }
+            
+            span.metro_green::before {
+                background-color: #30ad64;
+            }
+            
+            span.metro_blue::before {
+                background-color: #4a90e2;
+            }
+            
+            span.metro_red::before {
+                background-color: red;
+            }
+            
+            span.metro_green::after {
+                content: "30 мин пешком";
+            }
+            
+            span.metro_blue::after {
+                content: "10 мин пешком";
+            }
+            
+            h3 {
+                margin-top: 26px;
+                margin-bottom: 9px;
+                
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            
+            span.scale { 
+                font-size: 12px;
+                color: #4a4a4a; 
+            }
+            
+            p { 
+                margin-top: 20px;
+                max-width: 330px;
+                font-size: 13px;
+                line-height: 1.6;
+                color: #000;
+            }
+        }
+        
+        .group_cost {
+            max-width: 149px;
+            text-align: right;
+                    
+            h2 { 
+                margin-top: 3px;
+                margin-bottom: 12px;
+                font-size: 18px;
+                color: #4a4a4a; 
+            }
+            
+            span.cost {
+                color: #9b9b9b;  
+            }
+            
+            span.cost::after {
+                content: "курс";
+                display: inline-block;
+                margin-left: 15px;
+                padding-bottom: 5px;
+                font-size: 14px;
+                color: #9b9b9b;
+                border-bottom: 2px solid #b1b1b1;
+            }
+            
+            .rating {
+                margin: 19px 0;
+                width: 148px;
+                padding: 11px 12px;
+                text-align: left;
+                
+                border-radius: 4px;
+                background: url('../img/info.png') no-repeat 89% 50%;
+                
+                &_expensive { background-color: #ffefea;}
+                &_good { background-color: #eafff5; }
+                span {
+                    font-size: 13px;
+                    color: rgba(208, 2, 2, 0.5);
+                }
+            }
+                        
+            .contact_link {
+                margin-bottom: 30px;
+                a:first-child {
+                    margin-right: 1px;
+                }    
+            }
+        }
+        
+        .flat__variant_footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            margin: 14px auto;
+            clear: both;
+            
+            .variant_footer_item { flex-basis: 33%; }
+            
+            .next_section {
+                cursor: pointer;
+                text-align: right;
+                transition: all .4s;
+                
+                i { 
+                    color: #979797;
+                    margin-left: 22px;
+                }
+
+                &:hover { transform: translateX(2px); }
+
+                a {
+                    font-size: 12px;
+                    line-height: 1.5;
+                    color: #979797;
+                    
+                    span {
+                        margin-right: 19px;
+                        font-size: 12px;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                }
+            }
+            
+            .slider {
+                text-align: center;
+                
+                input[type=radio] { display: none; } 
+
+                input[type="radio"] + label {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 1px;
+
+                    background-color: rgba(0, 0, 0, 0.3);
+                    border-radius: 50%; 
+                }
+
+                input[type="radio"]:checked + label{ background-color: rgba(0, 0, 0, 0.7); } 
+            }
+        }
+    }
+}
+
+
+
+
+

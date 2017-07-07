@@ -1,0 +1,30 @@
+$primary-bc-color:#2573d8;;
+$hover-bc-color:#01447e;
+
+
+ul.breadcrumb {
+    list-style: none;
+    font-size: 14px;
+    
+    li {
+        display: inline;
+        
+        &+li:before {
+            padding: 3px;
+            color: $primary-bc-color;
+            content: "/\00a0";
+        }
+        
+        a {
+            color: $primary-bc-color;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        
+        a:hover {
+            color: $hover-bc-color;
+            text-decoration: underline;
+        }
+    }
+     
+}

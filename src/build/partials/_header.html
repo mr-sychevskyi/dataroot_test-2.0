@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="container">
+    
+        <!--    HEADER-TOP-->
+        @@include('./_header-top.html')  
+
+        <h1  class="header__title">Поиск недвижимости в Украине</h1>
+
+        <form class="header__form search-form">
+
+            <div class="header__form_item select-group">
+                <h2 class="group-title">Выберите город</h2>
+                <select name="select">
+                    <option>Киев</option>
+                    <option>Львов</option>
+                    <option>Одесса</option>
+                    <option>Черкассы</option>
+                </select>
+            </div>
+
+            <div class="header__form_item checkbox-group">
+                <h2 class="group-title">Кол-во комнат</h2>
+                <input type="checkbox" id="chB1" name="chB" checked/>
+                <label for="chB1">1</label>
+                <input type="checkbox" id="chB2" name="chB" checked/>
+                <label for="chB2">2</label>
+                <input type="checkbox" id="chB3" name="chB" />
+                <label for="chB3">3</label>
+                <input type="checkbox" id="chB4" name="chB" />
+                <label for="chB4">4</label>
+                <input type="checkbox" id="chB5" name="chB" />
+                <label for="chB5">5+</label>
+            </div>
+
+            <input class="header__form_item btn btn__primary-invert" type="submit" value="Перейти к поиску">    
+
+        </form>
+    </div>
+</header>    	
+    
+    
+    

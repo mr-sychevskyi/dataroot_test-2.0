@@ -1,0 +1,50 @@
+<div class="request__modal">
+    <div class="request__modal-item request__modal-left">
+        <h1>Оставить заявку</h1>
+        <p>Нет времени искать по сайту?<br>Заполняй критерии поиска и получай актуальные объявления как только они появляются на Metrovka</p> 
+    </div>
+
+    <div class="request__modal-item request__modal-right">
+
+    <form class="application-form" action="#">
+        <div class="tabs-group">
+            <input type="radio" id="tab1" name="tab-2" checked/>
+            <label for="tab1">Район</label>
+            <input type="radio" id="tab2" name="tab-2"/>
+            <label for="tab2">Метро</label>
+        </div>
+
+		<div class="select-group">
+			<select name="select-district">
+				<option>Голосеевский</option>
+				<option>Соломенский</option>
+			</select>
+			<select name="select-metro">
+				<option>Хрещатик</option>
+				<option>Дарница</option>
+			</select>
+		</div>
+
+		<h2 class="checkbox-title">Кол-во комнат</h2>
+		<div class="checkbox-group">
+			<input type="checkbox" id="chB-1" name="chB-1" checked/>
+			<label for="chB-1">1</label>
+			<input type="checkbox" id="chB-2" name="chB-1" checked/>
+			<label for="chB-2">2</label>
+			<input type="checkbox" id="chB-3" name="chB-1" />
+			<label for="chB-3">3</label>
+			<input type="checkbox" id="chB-4" name="chB-1" />
+			<label for="chB-4">4</label>
+			<input type="checkbox" id="chB-5" name="chB-1" />
+			<label for="chB-5">5+</label>
+		</div>
+
+		<input type="text"  name="name"  placeholder="Как вас зовут?"><br>
+		<input type="email" name="email" placeholder="Email"><br>
+		<input type="submit" class="btn btn__primary" value="Оставить заявку">
+    </form>
+
+    <label for="pop-up" class="request__modal-exit"></label>
+    </div>
+</div> 
+<div class="overlay"></div>

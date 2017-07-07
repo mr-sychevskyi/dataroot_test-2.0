@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+
+<html >
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrovka</title>
+    <link href="dist/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <!--    HEADER-->
+    @@include('./partials/_header.html')
+    
+    <!--    MAIN-->
+    <main class="main">
+		<div class="container">
+			<section class="main__section realty">
+				<div class="realty__search">
+					<h2 class="main__section_title">Недвижимость возле метро</h2>	
+					<form class="realty__search_form" action="#">
+						<div class="tabs-group">
+							<input type="radio" id="tab-1" name="tab-1" checked/>
+							<label for="tab-1">Квартиры</label>
+							<input type="radio" id="tab-2" name="tab-1">
+							<label for="tab-2">Дома</label>
+							<input type="radio" id="tab-3" name="tab-1"/>
+							<label for="tab-3">Офисы</label>
+						</div>
+
+						<div class="select-group">
+							<select name="select">
+								<option>Политехнический институт</option>
+								<option>Хрещатик</option>
+								<option>Театральная</option>
+								<option>Академгородок</option>
+							</select>
+						</div>
+
+						<input type="submit" class="btn btn__primary btn-lg" value="Показать результаты поиска">
+                	</form>
+				</div>
+				<div class="realty__image">
+					<img src="../src/img/metro.png" alt="metro-image">
+				</div>	
+			</section>
+           
+           
+			<section class="main__section offers">
+                <div class="offers__body">   
+                    <h2 class="main__section_title">Лучшие предложения в Киеве</h2>
+
+                    <ul class="offers__tabs">
+                        <li><a class="tabs_item active" href="#">Квартиры</a></li>
+                        <li><a class="tabs_item" href="#">Дома</a></li>
+                        <li><a class="tabs_item" href="#">Офиссы</a></li>
+                    </ul>
+
+                    <div class="offers__list offers__list-1 active">
+                        <div class="list_item">
+                            <img src="../src/img/tab_room3.png" alt='flat-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room4.png" alt='flat-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room3.png" alt='flat-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room4.png" alt='flat-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div>    	
+
+                    <div class="offers__list offers__list-2">
+                        <div class="list_item">
+                            <img src="../src/img/tab_house.png" alt='house-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-house2.png" alt='house-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_house.png" alt='house-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span>  
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-house2.png" alt='house-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div> 
+
+                    <div class="offers__list offers__list-3">
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div> 
+			    </div> 
+                <div class="offers__footer">
+                    <a href="#" class="offers__link">Смотреть лучшие ценовые предложения</a>
+                </div>     
+			</section>
+            
+                      
+            <section class="main__section soc-apps">
+            	<h2 class="main__section_title">Общайтесь в Telegram</h2>
+			    <p>Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
+           		    
+                <div class="soc-apps__content">
+                    
+					<div class="soc-apps__item">
+						<img class="item__image" src="../src/img/sl-phone-telegram.png" alt="app-telegram" >
+						<div class="item__info">
+							<i class="icon-tg"></i><span> Telegram</span>
+							<h3 class="item__info_title">Metrovka Bot</h3>
+							<ol class="item__info_list">
+								<li>Собирайте аналитику по объектам</li>
+								<li>Получайте подсказки по эффективному продвижению объявлений</li>
+								<li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="#" class="btn btn__primary">Присоедениться к Telegram</a>	
+						</div>
+					</div>
+                    
+					<div class="soc-apps__item">
+						<img class="item__image" src="../src/img/sl-bitmap.png" alt="app-vk" >
+						<div class="item__info">
+							<i class="icon-vk"></i><span> VK</span>
+							<h3 class="item__info_title">Metrovka Bot</h3>
+							<ol class="item__info_list">
+								<li>Собирайте аналитику по объектам</li>
+								<li>Получайте подсказки по эффективному продвижению объявлений</li>
+								<li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="№" class="btn btn__primary">Присоедениться к ВКонтакте</a>	
+						</div>
+					</div>
+                    
+                </div>
+                <div class="soc-apps__controls"></div>
+                
+            </section>                              
+            
+        </div>
+	</main>
+    
+    
+    <!--    FOOTER-->
+    @@include('./partials/_footer.html')
+    
+    <!--    POP-UP-->
+    @@include('./partials/_pop-up.html')
+	
+    
+    <!--    SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>      
+</body>
+</html>

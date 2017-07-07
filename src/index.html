@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+
+<html >
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrovka</title>
+    <link href="dist/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <!--    HEADER-->
+    <header class="header">
+    <div class="container">
+    
+        <!--    HEADER-TOP-->
+        <div class="header__top">
+            <div class="header__top-left">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.png" alt="head_logo" title="head_logo">
+                </a>
+
+                <nav class="header__nav">
+                    <li><a class="nav__link" href="page-2.html">Аренда</a></li>
+                    <li><a class="nav__link" href="#">Продажа</a></li>
+                    <li><a class="nav__link" href="#">Посуточно</a></li>
+                </nav>                  
+
+                <div class="header__dropdown">
+                    <a href="#">Еще</a> 
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Блог</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Контакты</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link danger-link">Удалить обьявление</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__top-right">
+                <a class="btn btn__icon"><i class="fa fa-plus-circle fa-lg"></i>Разместить обьявление</a>	
+                <a class="btn btn__default" href="#">Войти</a>
+            </div>
+
+            <div class="hamburger__menu">
+                <label class="hamburger__icon"><img src="img/hamburger-1.png" alt="hamburger-icon"></label>
+                <ul class="hamburger__content">
+                    <li><a class="hamburger__link" href="page-2.html">Аренда</a></li>
+                    <li><a class="hamburger__link" href="#">Продажа</a></li>
+                    <li><a class="hamburger__link" href="#">Посуточно</a></li>
+                    <li><a class="hamburger__link" href="#">Блог</a></li>
+                    <li><a class="hamburger__link" href="#">Контакты</a></li> 
+                    <li><a class="hamburger__link" href="#">Новый поиск</a></li>
+                    <li><a class="btn btn__icon hamburger__link"><i class="fa fa-plus-circle fa-lg"></i>Разместить обьявление</a></li>
+                    <li><a href="#" class="btn btn__default hamburger__link">Войти</a></li>
+                </ul>
+                <div class="overlay-hamburger"></div>
+            </div>
+        </div>  
+
+        <h1  class="header__title">Поиск недвижимости в Украине</h1>
+
+        <form class="header__form search-form">
+
+            <div class="header__form_item select-group">
+                <h2 class="group-title">Выберите город</h2>
+                <select name="select">
+                    <option>Киев</option>
+                    <option>Львов</option>
+                    <option>Одесса</option>
+                    <option>Черкассы</option>
+                </select>
+            </div>
+
+            <div class="header__form_item checkbox-group">
+                <h2 class="group-title">Кол-во комнат</h2>
+                <input type="checkbox" id="chB1" name="chB" checked/>
+                <label for="chB1">1</label>
+                <input type="checkbox" id="chB2" name="chB" checked/>
+                <label for="chB2">2</label>
+                <input type="checkbox" id="chB3" name="chB" />
+                <label for="chB3">3</label>
+                <input type="checkbox" id="chB4" name="chB" />
+                <label for="chB4">4</label>
+                <input type="checkbox" id="chB5" name="chB" />
+                <label for="chB5">5+</label>
+            </div>
+
+            <input class="header__form_item btn btn__primary-invert" type="submit" value="Перейти к поиску">    
+
+        </form>
+    </div>
+    </header>    	
+    
+    
+    <!--    MAIN-->
+    <main class="main">
+		<div class="container">
+			<section class="main__section realty">
+				<div class="realty__search">
+					<h2 class="main__section_title">Недвижимость возле метро</h2>	
+					<form class="realty__search_form" action="#">
+						<div class="tabs-group">
+							<input type="radio" id="tab-1" name="tab-1" checked/>
+							<label for="tab-1">Квартиры</label>
+							<input type="radio" id="tab-2" name="tab-1">
+							<label for="tab-2">Дома</label>
+							<input type="radio" id="tab-3" name="tab-1"/>
+							<label for="tab-3">Офисы</label>
+						</div>
+
+						<div class="select-group">
+							<select name="select">
+								<option>Политехнический институт</option>
+								<option>Хрещатик</option>
+								<option>Театральная</option>
+								<option>Академгородок</option>
+							</select>
+						</div>
+
+						<input type="submit" class="btn btn__primary btn-lg" value="Показать результаты поиска">
+                	</form>
+				</div>
+				<div class="realty__image">
+					<img src="../src/img/metro.png" alt="metro-image">
+				</div>	
+			</section>
+           
+           
+			<section class="main__section offers">
+                <div class="offers__body">   
+                    <h2 class="main__section_title">Лучшие предложения в Киеве</h2>
+
+                    <ul class="offers__tabs">
+                        <li><a class="tabs_item active" href="#">Квартиры</a></li>
+                        <li><a class="tabs_item" href="#">Дома</a></li>
+                        <li><a class="tabs_item" href="#">Офиссы</a></li>
+                    </ul>
+
+                    <div class="offers__list offers__list-1 active">
+                        <div class="list_item">
+                            <img src="../src/img/tab_room3.png" alt='flat-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room4.png" alt='flat-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room3.png" alt='flat-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_room4.png" alt='flat-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div>    	
+
+                    <div class="offers__list offers__list-2">
+                        <div class="list_item">
+                            <img src="../src/img/tab_house.png" alt='house-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-house2.png" alt='house-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab_house.png" alt='house-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span>  
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-house2.png" alt='house-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div> 
+
+                    <div class="offers__list offers__list-3">
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-1'>
+
+                            <h3 class="cost">11 800 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>2 комн • 30 кв.м.</p>
+                            <span class="metro metro_green">Позняки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-2'>
+
+                            <h3 class="cost">13 450 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>3 комн • 45 кв.м.</p>
+                            <span class="metro metro_blue">Оболонь</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-3'>
+
+                            <h3 class="cost">10 200 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>1 комн • 20 кв.м.</p>
+                            <span class="metro metro_green">Осокорки</span> 
+                        </div>
+                        <div class="list_item">
+                            <img src="../src/img/tab-office.png" alt='office-4'>
+
+                            <h3 class="cost">15 600 грн &nbsp<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i></h3>
+                            <p>4 комн • 60 кв.м.</p>
+                            <span class="metro metro_red">Хрещатик</span>  
+                        </div>
+                    </div> 
+			    </div> 
+                <div class="offers__footer">
+                    <a href="#" class="offers__link">Смотреть лучшие ценовые предложения</a>
+                </div>     
+			</section>
+            
+                      
+            <section class="main__section soc-apps">
+            	<h2 class="main__section_title">Общайтесь в Telegram</h2>
+			    <p>Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
+           		    
+                <div class="soc-apps__content">
+                    
+					<div class="soc-apps__item">
+						<img class="item__image" src="../src/img/sl-phone-telegram.png" alt="app-telegram" >
+						<div class="item__info">
+							<i class="icon-tg"></i><span> Telegram</span>
+							<h3 class="item__info_title">Metrovka Bot</h3>
+							<ol class="item__info_list">
+								<li>Собирайте аналитику по объектам</li>
+								<li>Получайте подсказки по эффективному продвижению объявлений</li>
+								<li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="#" class="btn btn__primary">Присоедениться к Telegram</a>	
+						</div>
+					</div>
+                    
+					<div class="soc-apps__item">
+						<img class="item__image" src="../src/img/sl-bitmap.png" alt="app-vk" >
+						<div class="item__info">
+							<i class="icon-vk"></i><span> VK</span>
+							<h3 class="item__info_title">Metrovka Bot</h3>
+							<ol class="item__info_list">
+								<li>Собирайте аналитику по объектам</li>
+								<li>Получайте подсказки по эффективному продвижению объявлений</li>
+								<li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="№" class="btn btn__primary">Присоедениться к ВКонтакте</a>	
+						</div>
+					</div>
+                    
+                </div>
+                <div class="soc-apps__controls"></div>
+                
+            </section>                              
+            
+        </div>
+	</main>
+    
+    
+    <!--    FOOTER-->
+    <footer class="footer">           
+        <div class="container">  
+            <div class="footer__grid">
+                <div class="footer__grid_item">
+                    <h2 class="grid_item_title">Metrovka</h2>
+                    <ul class="grid_item_nav">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Пресса о нас</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>     
+                </div>
+                <div class="footer__grid_item">
+                    <h2 class="grid_item_title">Партнерство</h2>
+                    <ul class="grid_item_nav">
+                        <li><a href="#">Как разместить обьявление</a></li>
+                        <li><a href="#">Инструменты продвижения</a></li>
+                        <li><a href="#">Правила заполнения объявлений</a></li>
+                    </ul>     
+                </div>	   
+                <div class="footer__grid_item">
+                    <h2 class="grid_item_title">Узнайте больше</h2>
+                    <ul class="grid_item_nav">
+                        <li><a href="#">Бонусная программа Bonus+</a></li>
+                        <li><a href="#">Telegram Metrovka Bot</a></li>
+                        <li><a href="#">Как работает поиск</a></li>
+                        <li><a href="#">Как пользоваться избранным</a></li>
+                    </ul>     
+                </div>
+                <div class="footer__grid_item">
+                    <h2 class="grid_item_title">Контакты</h2>
+                    <ul class="grid_item_nav">
+                        <li>
+                            <ul class="icons_social">
+                                <li><a href="#" class="ic_fb"></a></li>
+                                <li><a href="#" class="ic_vk"></a></li>
+                                <li><a href="#" class="ic_in"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ул. Жилянская, 37<br> Киев, 01033</a></li>
+                        <li><a href="#">info@metrovka.ua</a></li>
+                        <li><a class="btn btn__primary btn-md btn-pop" href="#">Оставить заявку</a></li>
+                    </ul>     
+                </div>
+            </div>                
+
+            <a class="footer__logo" href="#">
+                <img href="index.html" src="img/foot_logo.png" alt="footer_logo">    
+            </a>
+
+        </div>
+    </footer>      	
+    
+    <!--    POP-UP-->
+    <div class="request__modal">
+        <div class="request__modal-item request__modal-left">
+            <h1>Оставить заявку</h1>
+            <p>Нет времени искать по сайту?<br>Заполняй критерии поиска и получай актуальные объявления как только они появляются на Metrovka</p> 
+        </div>
+
+        <div class="request__modal-item request__modal-right">
+
+        <form class="application-form" action="#">
+            <div class="tabs-group">
+                <input type="radio" id="tab1" name="tab-2" checked/>
+                <label for="tab1">Район</label>
+                <input type="radio" id="tab2" name="tab-2"/>
+                <label for="tab2">Метро</label>
+            </div>
+
+            <div class="select-group">
+                <select name="select-district">
+                    <option>Голосеевский</option>
+                    <option>Соломенский</option>
+                </select>
+                <select name="select-metro">
+                    <option>Хрещатик</option>
+                    <option>Дарница</option>
+                </select>
+            </div>
+
+            <h2 class="checkbox-title">Кол-во комнат</h2>
+            <div class="checkbox-group">
+                <input type="checkbox" id="chB-1" name="chB-1" checked/>
+                <label for="chB-1">1</label>
+                <input type="checkbox" id="chB-2" name="chB-1" checked/>
+                <label for="chB-2">2</label>
+                <input type="checkbox" id="chB-3" name="chB-1" />
+                <label for="chB-3">3</label>
+                <input type="checkbox" id="chB-4" name="chB-1" />
+                <label for="chB-4">4</label>
+                <input type="checkbox" id="chB-5" name="chB-1" />
+                <label for="chB-5">5+</label>
+            </div>
+
+            <input type="text"  name="name"  placeholder="Как вас зовут?"><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="submit" class="btn btn__primary" value="Оставить заявку">
+        </form>
+
+        <label for="pop-up" class="request__modal-exit"></label>
+        </div>
+    </div> 
+    <div class="overlay"></div>
+
+    
+    <!--    SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+         
+</body>
+</html>
